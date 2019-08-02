@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipesApp.ViewModels.DescriptorPageModel">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Descriptores"/>
+            <Button Text="Frito"
+                    x:Name="FriedButton"
+                    Clicked="FriedButton_Clicked"/>
+            <Button Text="Rostisado"
+                    x:Name="RoastedButton"
+                    Clicked="RoastedButton_Clicked"/>
+            <Button Text="Horneado"
+                    x:Name="BakedButton"
+                    Clicked="BakedButton_Clicked"/>
+            <Button Text="Asado"
+                    x:Name="GrilledButton"
+                    Clicked="GrilledButton_Clicked"/>
+            <Button Text="Guisado"
+                    x:Name="StewedButton"
+                    Clicked="StewedButton_Clicked"/>
+            <Button Text="Sopa"
+                    x:Name="SoupButton"
+                    Clicked="SoupButton_Clicked"/>
+            <Button Text="Sandwhich"
+                    x:Name="SandwhichButton"
+                    Clicked="SandwhichButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

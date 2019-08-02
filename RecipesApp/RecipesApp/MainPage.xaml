@@ -3,25 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RecipesApp"
              x:Class="RecipesApp.MainPage">
+
     
+
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="New"
+                     Clicked="GotoProteinButton_Clicked"/>
+    </ContentPage.ToolbarItems>-->
+
     <StackLayout Margin="20, 20, 20, 0">
-        <Label Text="Proteinas"/>
-        <!--Entry Placeholder="Que vamos a cocinar?"/-->
-        <Button Text="Carne" 
-                    x:Name="MeatButton"
-                    Clicked="MeatButton_Clicked"/>
-        <Button Text="Pollo"
-                x:Name="ChickenButton"
-                Clicked="ChickenButton_Clicked"/>
-        <Button Text="Pavo"
-                x:Name="TurkeyButton"
-                Clicked="TurkeyButton_Clicked"/>
-        <Button Text="Puerco"
-                x:Name="PorkButton"
-                Clicked="PorkButton_Clicked"/>
-        <Button Text="Pescado"
-                x:Name="FishButton"
-                Clicked="FishButton_Clicked"/>
+        <Label Text="Bienvenida, que vamos a concinar?"
+               />
+        <Button Text="Presiona"
+                x:Name="GotoProteinButton"
+                Clicked="GotoProteinButton_Clicked"/>
         <!-- Place new controls here -->
         <!--<Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
