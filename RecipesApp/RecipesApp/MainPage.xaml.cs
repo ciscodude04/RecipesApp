@@ -13,5 +13,30 @@ namespace RecipesApp
         {
             InitializeComponent();
         }
+
+        private void MeatButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TurkeyButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChickenButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PorkButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FishButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
