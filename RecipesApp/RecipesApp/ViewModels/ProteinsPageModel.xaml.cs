@@ -15,11 +15,11 @@ namespace RecipesApp.ViewModels
 		public ProteinsPageModel ()
 		{
 			InitializeComponent ();
-            MeatButton.Clicked += MeatButton_Clicked;
-            TurkeyButton.Clicked += TurkeyButton_Clicked;
-            ChickenButton.Clicked += TurkeyButton_Clicked;
-            PorkButton.Clicked += TurkeyButton_Clicked;
-            FishButton.Clicked += FishButton_Clicked;
+            //MeatButton.Clicked += MeatButton_Clicked;
+            //TurkeyButton.Clicked += TurkeyButton_Clicked;
+            //ChickenButton.Clicked += TurkeyButton_Clicked;
+            //PorkButton.Clicked += TurkeyButton_Clicked;
+            //FishButton.Clicked += FishButton_Clicked;
         }
 
 

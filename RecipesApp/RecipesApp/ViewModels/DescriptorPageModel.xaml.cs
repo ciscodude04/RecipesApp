@@ -15,13 +15,13 @@ namespace RecipesApp.ViewModels
 		public DescriptorPageModel ()
 		{
 			InitializeComponent ();
-            FriedButton.Clicked += FriedButton_Clicked;
-            RoastedButton.Clicked += RoastedButton_Clicked;
-            BakedButton.Clicked += BakedButton_Clicked;
-            GrilledButton.Clicked += GrilledButton_Clicked;
-            StewedButton.Clicked += StewedButton_Clicked;
-            SoupButton.Clicked += SoupButton_Clicked;
-            SandwhichButton.Clicked += SandwhichButton_Clicked;
+            //FriedButton.Clicked += FriedButton_Clicked;
+            //RoastedButton.Clicked += RoastedButton_Clicked;
+            //BakedButton.Clicked += BakedButton_Clicked;
+            //GrilledButton.Clicked += GrilledButton_Clicked;
+            //StewedButton.Clicked += StewedButton_Clicked;
+            //SoupButton.Clicked += SoupButton_Clicked;
+            //SandwhichButton.Clicked += SandwhichButton_Clicked;
 		}
 
         private void FriedButton_Clicked(object sender, EventArgs e)
