@@ -3,29 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipesApp.ViewModels.DescriptorPageModel">
     <ContentPage.Content>
-        <StackLayout Margin="20">
-            <Label Text="Descriptores"/>
-            <Button Text="Frito"
+        <ScrollView>
+            <StackLayout Margin="20">
+                <Label Text="Descriptores"/>
+                <Button Text="Frito"
                     x:Name="FriedButton"
                     Clicked="FriedButton_Clicked"/>
-            <Button Text="Rostisado"
+                <Button Text="Rostisado"
                     x:Name="RoastedButton"
                     Clicked="RoastedButton_Clicked"/>
-            <Button Text="Horneado"
+                <Button Text="Horneado"
                     x:Name="BakedButton"
                     Clicked="BakedButton_Clicked"/>
-            <Button Text="Asado"
+                <Button Text="Asado"
                     x:Name="GrilledButton"
                     Clicked="GrilledButton_Clicked"/>
-            <Button Text="Guisado"
+                <Button Text="Guisado"
                     x:Name="StewedButton"
                     Clicked="StewedButton_Clicked"/>
-            <Button Text="Sopa"
+                <Button Text="Sopa"
                     x:Name="SoupButton"
                     Clicked="SoupButton_Clicked"/>
-            <Button Text="Sandwhich"
+                <Button Text="Sandwhich"
                     x:Name="SandwhichButton"
                     Clicked="SandwhichButton_Clicked"/>
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

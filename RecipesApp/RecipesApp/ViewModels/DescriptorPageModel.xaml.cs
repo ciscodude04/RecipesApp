@@ -12,9 +12,12 @@ namespace RecipesApp.ViewModels
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class DescriptorPageModel : ContentPage
 	{
-		public DescriptorPageModel ()
+        string protein_word;
+        string specific_description;
+		public DescriptorPageModel (string parameter)
 		{
 			InitializeComponent ();
+            protein_word = parameter;
             //FriedButton.Clicked += FriedButton_Clicked;
             //RoastedButton.Clicked += RoastedButton_Clicked;
             //BakedButton.Clicked += BakedButton_Clicked;
@@ -22,41 +25,48 @@ namespace RecipesApp.ViewModels
             //StewedButton.Clicked += StewedButton_Clicked;
             //SoupButton.Clicked += SoupButton_Clicked;
             //SandwhichButton.Clicked += SandwhichButton_Clicked;
-		}
-
-        private void FriedButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new ResultPageModel());
         }
 
-        private void RoastedButton_Clicked(object sender, EventArgs e)
+        private async void FriedButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Fried";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
 
-        private void BakedButton_Clicked(object sender, EventArgs e)
+        private async void RoastedButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Roasted";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
 
-        private void GrilledButton_Clicked(object sender, EventArgs e)
+        private async void BakedButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Baked";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
 
-        private void StewedButton_Clicked(object sender, EventArgs e)
+        private async void GrilledButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Grilled";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
 
-        private void SoupButton_Clicked(object sender, EventArgs e)
+        private async void StewedButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Stew";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
 
-        private void SandwhichButton_Clicked(object sender, EventArgs e)
+        private async void SoupButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ResultPageModel());
+            specific_description = "Soup";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
+        }
+
+        private async void SandwhichButton_Clicked(object sender, EventArgs e)
+        {
+            specific_description = "Sandwhich";
+            await Navigation.PushAsync(new ResultPageModel(specific_description, protein_word));
         }
     }
 }

@@ -9,12 +9,19 @@ using Xamarin.Forms.Xaml;
 
 namespace RecipesApp.ViewModels
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ResultPageModel : ContentPage
-	{
-		public ResultPageModel ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ResultPageModel : ContentPage
+    {
+        public ResultPageModel(string descriptor, string protein)
+        {
+            InitializeComponent();
+
+            SearchWord.Text = "Resultados para: " + descriptor + " " + protein;
+        }
+
+        //private void Result1_Clicked(object sender, EventArgs e)
+        //{
+        //    Navigation.PushAsync(new RecipePage());
+        //}
 	}
 }

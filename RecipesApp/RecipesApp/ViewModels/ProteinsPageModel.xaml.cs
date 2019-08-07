@@ -12,6 +12,7 @@ namespace RecipesApp.ViewModels
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ProteinsPageModel : ContentPage
 	{
+        string specific_protein;
 		public ProteinsPageModel ()
 		{
 			InitializeComponent ();
@@ -23,29 +24,34 @@ namespace RecipesApp.ViewModels
         }
 
 
-        private void MeatButton_Clicked(object sender, EventArgs e)
+        private async void MeatButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DescriptorPageModel());
+            specific_protein = "Beef";
+            await Navigation.PushAsync(new DescriptorPageModel(specific_protein));
         }
 
-        private void TurkeyButton_Clicked(object sender, EventArgs e)
+        private async void TurkeyButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DescriptorPageModel());
+            specific_protein = "Turkey";
+            await Navigation.PushAsync(new DescriptorPageModel(specific_protein));
         }
 
-        private void ChickenButton_Clicked(object sender, EventArgs e)
+        private async void ChickenButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DescriptorPageModel());
+            specific_protein = "Chicken";
+            await Navigation.PushAsync(new DescriptorPageModel(specific_protein));
         }
 
-        private void PorkButton_Clicked(object sender, EventArgs e)
+        private async void PorkButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DescriptorPageModel());
+            specific_protein = "Pork";
+            await Navigation.PushAsync(new DescriptorPageModel(specific_protein));
         }
 
-        private void FishButton_Clicked(object sender, EventArgs e)
+        private async void FishButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new DescriptorPageModel());
+            specific_protein = "Fish";
+            await Navigation.PushAsync(new DescriptorPageModel(specific_protein));
         }
 
         //private void ToolbarItem_Clicked(object sender, EventArgs e)

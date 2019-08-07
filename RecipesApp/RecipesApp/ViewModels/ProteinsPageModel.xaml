@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipesApp.ViewModels.ProteinsPageModel">
-    <!--<ContentPage.ToolbarItems>
+    <ScrollView>
+        <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="New"
                      Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>-->
-        
-    <StackLayout Margin="20, 20, 20, 0">
+
+        <StackLayout Margin="20, 20, 20, 0">
             <Label Text="Proteinas"/>
             <!--Entry Placeholder="Que vamos a cocinar?"/-->
             <Button Text="Carne" 
@@ -26,5 +27,5 @@
                 x:Name="FishButton"
                 Clicked="FishButton_Clicked"/>
         </StackLayout>
-   
+    </ScrollView>
 </ContentPage>

@@ -8,9 +8,8 @@
                      Clicked="ToolbarItem_Clicked"/>
         </ContentPage.ToolbarItems>-->
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text=""
+                   x:Name="SearchWord"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
