@@ -3,12 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipesApp.ViewModels.RecipePageModel">
     <ContentPage.Content>
-        <StackLayout>
-                <Label Text="Titulo" 
-                   x:Name="RecipeTitleLabel"/>
+        <ScrollView>
+            <StackLayout Margin="20, 20, 20, 20">
+                <Grid Padding="5" RowSpacing="5" ColumnSpacing="5">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
 
-                <Label Text="Ingredientes" 
-                   x:Name="Ingredients"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    
+                    <Label FontSize="20"
+                           Grid.ColumnSpan="2"
+                           HorizontalOptions="Center"
+                           Text="Titulo" 
+                           x:Name="RecipeTitleLabel"/>
+
+                    <Image Source="sample.jpg"
+                           Grid.Row="1"
+                           Grid.ColumnSpan="2"/>
+
+                    <Label FontSize="15"
+                       Grid.Row="2"
+                       Text="Ingredientes" 
+                       x:Name="Ingredients"/>
+                    
+                    <Label FontSize="10"
+                           Grid.Row="3"
+                           Text="bulletpoint list 1"/>
+                    <Label FontSize="10"
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           Text="bulletpoint list 2"/>
+
+                    <Label FontSize="15"
+                           Grid.Row="4"
+                           Text="Description"/>
+
+                    <Label FontSize="10"
+                           Grid.Row="5"
+                           Grid.ColumnSpan="2"
+                           Text="something will go here"/>
+
+                    <Button Text="Ir a receta"
+                            Grid.Row="6"
+                            Grid.ColumnSpan="2"/>
+
+                </Grid>
             </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

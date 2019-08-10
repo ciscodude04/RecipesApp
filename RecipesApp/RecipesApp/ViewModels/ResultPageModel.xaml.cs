@@ -19,6 +19,11 @@ namespace RecipesApp.ViewModels
             SearchWord.Text = "Resultados para: " + descriptor + " " + protein;
         }
 
+        private async void Result1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RecipePageModel());
+        }
+
         //private void Result1_Clicked(object sender, EventArgs e)
         //{
         //    Navigation.PushAsync(new RecipePage());

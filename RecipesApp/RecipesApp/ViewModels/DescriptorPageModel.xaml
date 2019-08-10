@@ -5,28 +5,59 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="20">
-                <Label Text="Descriptores"/>
+                <Grid Padding="5" RowSpacing="5" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                <Label FontSize="15"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="Center"
+                       Text="Descriptores"/>
+                
                 <Button Text="Frito"
-                    x:Name="FriedButton"
-                    Clicked="FriedButton_Clicked"/>
+                        Grid.Row="1"
+                        x:Name="FriedButton"
+                        Clicked="FriedButton_Clicked"/>
                 <Button Text="Rostisado"
-                    x:Name="RoastedButton"
-                    Clicked="RoastedButton_Clicked"/>
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        x:Name="RoastedButton"
+                        Clicked="RoastedButton_Clicked"/>
                 <Button Text="Horneado"
-                    x:Name="BakedButton"
-                    Clicked="BakedButton_Clicked"/>
+                        Grid.Row="2"
+                        x:Name="BakedButton"
+                        Clicked="BakedButton_Clicked"/>
                 <Button Text="Asado"
-                    x:Name="GrilledButton"
-                    Clicked="GrilledButton_Clicked"/>
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        x:Name="GrilledButton"
+                        Clicked="GrilledButton_Clicked"/>
                 <Button Text="Guisado"
-                    x:Name="StewedButton"
-                    Clicked="StewedButton_Clicked"/>
+                        Grid.Row="3"
+                        x:Name="StewedButton"
+                        Clicked="StewedButton_Clicked"/>
                 <Button Text="Sopa"
-                    x:Name="SoupButton"
-                    Clicked="SoupButton_Clicked"/>
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        x:Name="SoupButton"
+                        Clicked="SoupButton_Clicked"/>
                 <Button Text="Sandwhich"
-                    x:Name="SandwhichButton"
-                    Clicked="SandwhichButton_Clicked"/>
+                        Grid.Row="4"
+                        Grid.ColumnSpan="2"
+                        x:Name="SandwhichButton"
+                        Clicked="SandwhichButton_Clicked"/>
+
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

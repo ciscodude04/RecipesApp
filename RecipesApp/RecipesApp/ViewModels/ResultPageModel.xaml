@@ -9,7 +9,11 @@
         </ContentPage.ToolbarItems>-->
         <StackLayout>
             <Label Text=""
+                   FontSize="15"
+                   HorizontalOptions="Center"
                    x:Name="SearchWord"/>
+            <Button Text="Result 1"
+                    Clicked="Result1_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,24 +8,49 @@
                      Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>-->
 
-        <StackLayout Margin="20, 20, 20, 0">
-            <Label Text="Proteinas"/>
+        <StackLayout Margin="20">
+            <Grid Padding="5" RowSpacing="5" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label FontSize="15"
+                       Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                Text="Proteinas"/>
             <!--Entry Placeholder="Que vamos a cocinar?"/-->
-            <Button Text="Carne" 
+            <Button Text="Carne"
+                    Grid.Row="1"
                     x:Name="MeatButton"
                     Clicked="MeatButton_Clicked"/>
             <Button Text="Pollo"
-                x:Name="ChickenButton"
-                Clicked="ChickenButton_Clicked"/>
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="ChickenButton"
+                    Clicked="ChickenButton_Clicked"/>
             <Button Text="Pavo"
-                x:Name="TurkeyButton"
-                Clicked="TurkeyButton_Clicked"/>
+                    Grid.Row="2"
+                    x:Name="TurkeyButton"
+                    Clicked="TurkeyButton_Clicked"/>
             <Button Text="Puerco"
-                x:Name="PorkButton"
-                Clicked="PorkButton_Clicked"/>
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="PorkButton"
+                    Clicked="PorkButton_Clicked"/>
             <Button Text="Pescado"
-                x:Name="FishButton"
-                Clicked="FishButton_Clicked"/>
+                    Grid.Row="3"
+                    x:Name="FishButton"
+                    Grid.ColumnSpan="2"
+                    Clicked="FishButton_Clicked"/>
+            </Grid>
         </StackLayout>
     </ScrollView>
 </ContentPage>
