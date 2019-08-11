@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using RecipesApp.CommonCode;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +18,11 @@ namespace RecipesApp.ViewModels
         {
             InitializeComponent();
 
+            RESTService test2 = new RESTService();
+            test2.test();
+
             SearchWord.Text = "Resultados para: " + descriptor + " " + protein;
+
         }
 
         private async void Result1_Clicked(object sender, EventArgs e)
